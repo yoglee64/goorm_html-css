@@ -1,0 +1,62 @@
+/* A버튼 스타일 코드 */
+.a-button{
+    background-color: rgb(20, 40, 192);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+}
+.a-button:hover{
+    opacity: 0.7;
+}
+.a-button:active{
+    opacity: 0.1;
+}
+/* B버튼 스타일코드 */
+.b-button{
+    background-position: white;
+    border-color: rgb(212, 6, 64);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(6,95,212);
+    border-radius: 2px;
+    cursor: pointer;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: background-color 3s, color 0.15s;
+}
+.b-button:hover{
+    background-color: rgb(6,95,212);
+    color: white;
+}
+.b-button:active{
+    opacity: 0.7;
+}
+/* C버튼 스타일 코드 */
+.c-button{
+    background-color: rgb(25,69,98);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition:  all 1s ease-out;
+}
+.c-button:hover{
+    /* box-shadow -값은 반대방향으로 전환됨 */
+    box-shadow: 5px 5px 10px rgb(0, 0, 0,0.5);
+}

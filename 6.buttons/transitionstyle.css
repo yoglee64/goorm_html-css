@@ -1,0 +1,20 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}div:hover {
+    width:300px;
+}
+.linear{
+  transition-timing-function: linear;
+}
+.ease-in{
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}

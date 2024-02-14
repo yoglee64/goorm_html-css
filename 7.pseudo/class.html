@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* .parent p:first-child{
+            color: lightpink;
+        } */
+        .parent p:first-of-type{
+            color: lightpink;
+        }
+        .container{
+            background-color: lightblue;
+            padding:10px;
+            margin-bottom: 30px;
+        }
+        .container:hover{
+            background-color: lightcoral;
+        }
+        .focus-input:focus{
+            background-color: lightgreen;
+        }
+        /* float으로 왼쪽으로 평평하게 정렬 */
+        .container-two>div{
+            margin-top: 30px;
+            background-color: lightpink;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        /* nth-child로 n번째 요소에 적용할 값을 지정할 수 있음 */
+        /* 2n+1로 홀수번째에만 적용을 해줌 */
+        .container-two>div:nth-child(2n+1){
+            background-color: lightskyblue;
+        }
+        /* container-two안에 자식 div의 마지막 요소에 적용 */
+        .container-two>div:last-child{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container-box">
+        Mouse Hover
+    </div>
+
+    <input type="text" class="focus-input">
+
+    <div class="container-two">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="parent">
+        <span>A</span>
+        <p>B</p>
+        <p>C</p>
+    </div>
+</body>
+</html>
